@@ -8,13 +8,25 @@ function myFunc()
   const value = this.value;
   const display = document.querySelector('input[type=tel]');
   display.value += value;
-  
-  this.onkeydown = function keyFunc(event)
-  {
-    if(event.key == VK_RETURN || event.key == VK_SPACE)
-      this.classList.add('ativa');
-  }
-
-  this.onkeyup = this.classList.remove('ativa');
-  
 }
+
+for(let i=0; i<teclas.length ; i++)
+  {
+    const key = teclas[i];
+
+    key.onkeydown = function (event)
+    {
+        if(event.code === "Enter" || event.code === "Space")
+         {
+            key.classList.add('ativa');
+         }
+    }
+    
+    key.onkeyup = function (event)
+    {
+        if(event.code === "Enter" || event.code === "Space")
+         {
+            key.classList.remove('ativa');
+         }
+    }
+  }
