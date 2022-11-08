@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="reset.css">
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <title>Formulário com JS</title>
+</head>
+<body>
+    <main class="principal">
+        <section class="abas">
+            <button class="entrar active">Entrar</button>
+            <button class="cadastrar">Cadastrar</button>
+        </section>
+        <section class="conteudo">
+            <form action="" class="login">
+                <label for="valor_usuario">Login:</label>
+                <input type="text" id="valor_usuario" class="input-padrao" required>
+                <label for="senha_usuario">Senha:</label>
+                <input type="password" id="senha_usuario" class="input-padrao" required>
+                <input type="submit" value="Enviar" class="input-submit">
+            </form>
+            <form action="" class="cadastro hidden">
+                <label for="nome_sobrenome">Nome completo:</label>
+                <input type="text" id="nome_sobrenome" class="input-padrao" required placeholder="Digite seu nome">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="Digite seu e-mail">
+                <label for="nome_usuario">Usuário:</label>
+                <input type="text" id="nome_usuario" class="input-padrao" required placeholder="Digite um nome de usuário">
+                <label for="input_senha">Senha:</label>
+                <input type="password" id="input_senha" class="input-padrao" required  placeholder="Digite sua senha">
+                <input type="submit" value="Enviar" class="input-submit">
+            </form>    
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

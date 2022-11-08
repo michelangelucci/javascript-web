@@ -1,0 +1,103 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principal {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.abas {
+    display: flex;
+    grid-column: span 2;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-bottom: solid 3px orange;
+}
+
+.entrar {
+    display: block;
+    grid-column: 1;
+    color: orange;
+    width: 60%;
+    height: 2.5rem;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cadastrar {
+    display: block;
+    grid-column: 2;
+    color: orange;
+    width: 60%;
+    height: 2.5rem;
+    padding:  10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.conteudo {
+    display: flex;
+    grid-column: span 2;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 8px 0 8px 0;
+    height: 1.2rem;
+    padding: 10px 20px;
+}
+
+.input-submit {
+    display: block;
+    grid-column: span 2;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+    height: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .input-submit {
+        display: block;
+        grid-column: span 2;
+        color: white;
+        width: 30%;
+        padding: 10px 20px;
+        background-color: gray;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+        
+}
