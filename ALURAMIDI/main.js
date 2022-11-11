@@ -21,6 +21,7 @@ for (let i=0; i<teclas.length; i++)
 
         key.onkeydown = function (event) 
         {
+            //console.log(event.code);
             if(event.code === 'Space' || event.code === 'Enter')
                 key.classList.add('ativa');
         }
